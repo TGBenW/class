@@ -1,0 +1,40 @@
+@mixin font($weight, $size, $color, $family)
+  font-weight: $weight
+  font-size: $size
+  font-family: $family
+  color: $color
+
+$light: 200
+$regular: 400
+$bold: 700
+$black: 900
+
+$navbar: 26px
+$font-22: 22px
+$font-20: 20px
+$font-18: 18px
+$font-16: 16px
+$font-14: 14px
+$font-12: 12px
+
+$font-mulish: 'Mulish', sans-serif
+$font-opensans: 'Open Sans', sans-serif
+
+@mixin fullScr
+  max-width: 100vw
+  max-height: 100vh
+  min-width: 100vw
+  min-height: 100vh
+  position: absolute
+  top: 0
+  z-index: -1
+
+@mixin navbar
+  list-style-type: none
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+
+@mixin dropmarpad
+  margin: 0
+  padding: 0

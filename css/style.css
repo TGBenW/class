@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  color: #dbcfcf;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #3D4849;
+}
+
+input, textarea {
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  cursor: pointer;
+}
