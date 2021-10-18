@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -17,7 +18,7 @@ textarea {
   resize: none;
 }
 
-p, h1, h2 {
+p, h1, h2, h3, h4, h5, h6, img {
   margin: 0;
   padding: 0;
 }
@@ -27,29 +28,40 @@ button {
 }
 
 .container1 {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: auto 180px 180px 180px 180px 180px 180px 180px 180px auto;
-  grid-template-rows: 40px 50px 138.46154px 25px 13px 241px 180px 180px 180px 180px 180px;
+  -ms-grid-columns: auto 180px 180px 180px 180px 180px 180px 180px 180px auto;
+      grid-template-columns: auto 180px 180px 180px 180px 180px 180px 180px 180px auto;
+  -ms-grid-rows: 40px 50px 138.46154px 25px 13px 241px 180px 25px 155px 180px 180px 180px;
+      grid-template-rows: 40px 50px 138.46154px 25px 13px 241px 180px 25px 155px 180px 180px 180px;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   justify-items: stretch;
-  align-items: stretch;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   background-color: #1A1A1A;
 }
 
 .s1aisle {
-  border: 0.5px solid rgba(255, 255, 255, 0.08);
-  border-top: 0;
-  border-bottom: 0;
+  border-left: 0.5px solid rgba(255, 255, 255, 0.08);
 }
 
 .s1aisle-s1aisle81 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 10;
   grid-row: 1 / 11;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
   grid-column: 1 / 2;
 }
 
 .s1aisle-s1aisle82 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 10;
   grid-row: 1 / 11;
+  -ms-grid-column: 10;
+  -ms-grid-column-span: 1;
   grid-column: 10 / 11;
 }
 
@@ -70,8 +82,12 @@ button {
 
 .s1aisle-navbar {
   height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .s1aisle-menu {
@@ -85,14 +101,18 @@ button {
   border-left: 1px solid white;
 }
 
-.s1aisle-subtheme {
+.s1aisle-uptheme {
   height: 25px;
   padding-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.s1aisle-subtext {
+.s1aisle-uptext {
   font-weight: 600;
   font-size: 13px;
   letter-spacing: 1.5px;
@@ -103,9 +123,16 @@ button {
 .s1aisle-s1aisle55 {
   padding: 30px;
   background: #FEBE02;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .s1aisle-arrow {
@@ -121,14 +148,70 @@ button {
 }
 
 .s1aisle-s1aisle58 {
-  grid-row: 8 / 10;
+  -ms-grid-row: 8;
+  -ms-grid-row-span: 3;
+  grid-row: 8 / 11;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
   grid-column: 3 / 5;
+  overflow: hidden;
+}
+
+.s1aisle-imagebox {
+  width: 360px;
+  height: 360px;
+  overflow: hidden;
 }
 
 .s1aisle-avatarl {
-  width: 359px;
-  height: 354px;
-  overflow: hidden;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.s1aisle-s1aisle60 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-left: 1px solid white;
+  padding-left: 20px;
+}
+
+.s1aisle-about {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 1.66667px;
+}
+
+.s1aisle-s1aisle66 {
+  min-width: 290px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.s1aisle-textabout {
+  font-size: 14px;
+  line-height: 27px;
+  letter-spacing: 1px/3;
+  opacity: 0.8;
+}
+
+.s1aisle-s1aisle63 {
+  -ms-grid-row: 8;
+  -ms-grid-row-span: 2;
+  grid-row: 8 / 10;
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 1;
+  grid-column: 9 / 10;
+  background-color: #979797;
 }
 
 .heading {
@@ -146,3 +229,4 @@ button {
 .ornament {
   position: absolute;
 }
+/*# sourceMappingURL=style.css.map */
