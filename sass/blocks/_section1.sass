@@ -7,6 +7,7 @@
   justify-items: stretch
   align-items: stretch
   background-color: $bg-section1
+  color: $text-primary
 .s1aisle
   border-left: 0.5px solid rgba(255, 255, 255, 0.08)
   //border-top: 0
@@ -57,7 +58,7 @@
     display: flex
     flex-direction: column
     justify-content: space-between
-  &-arrow
+  &-arrowjoin
     max-width: 17px
   &-join
     font-weight: 600
@@ -69,11 +70,11 @@
     grid-row: 8 / 11
     grid-column: 3 / 5
     overflow: hidden
-  &-imagebox
-    width: 360px
-    height: 360px
+  &-imageboxL
+    width: $rowW*2
+    height: $rowH*2
     overflow: hidden
-  &-avatarl
+  &-avatarL
     max-width: 100%
     max-height: 100%
     //overflow: hidden
@@ -105,6 +106,58 @@
     grid-column: 9 / 10
     background-color: #979797
     opacity: 0.12
+  &-imageboxS
+    width: $rowW
+    height: $rowH
+    overflow: hidden
+  &-avatarS
+    max-width: 100%
+    max-height: 100%
+  &-s1aisle72
+    grid-row: 10 / 11
+    grid-column: 7 / 9
+    background-color: #242424
+    overflow: hidden
+  &-imageboxW
+    width: $rowW*2
+    height: $rowH
+    overflow: hidden
+    display: flex
+    justify-content: center
+    align-items: center
+  &-audio
+    max-width: 289px
+    max-height: 68px
+  &-play
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
+    top: -$iconsize
+    width: $iconsize
+    height: $iconsize
+    &__blue
+      background-color: $play
+      left: $rowW*2-$iconsize
+    &__white
+      background-color: $text-primary
+      left: $rowW - $iconsize
+  &-playbtn
+    width: 9px
+    height: 12px
+  &-textmain
+    margin-top: 15px
+    font-weight: 600
+    font-size: 20px
+    line-height: 30px
+    letter-spacing: 0.3px
+  &-textsec
+    font-weight: normal
+    font-size: 13px
+    letter-spacing: 0.5px
+    opacity: 0.5
+  &-s1aisle77
+    overflow: hidden
 .heading
   font-weight: 600
   font-size: 110px

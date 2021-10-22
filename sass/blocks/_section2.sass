@@ -1,0 +1,122 @@
+.container2
+  display: grid
+  grid-template-columns: auto $rowW $rowW $rowW $rowW $rowW $rowW $rowW $rowW auto
+  grid-template-rows: $rowH/3*2 $rowH/9*10 $rowH*0.61 $rowH $rowH $rowH*0.27 $rowH*0.62 $rowH*0.11 $rowH*0.27 $rowH*0.61 $rowH*0.36 $rowH $rowH $rowH*0.27 $rowH*0.61 $rowH*0.13 $rowH*0.27 $rowH*0.61 $rowH*0.36 $rowH/3*2
+  grid-column-gap: 0px
+  grid-row-gap: 0px
+  justify-items: stretch
+  align-items: stretch
+  background-color: $bg-section2
+  color: $text-spec
+.s2aisle
+  border-left: 0.5px solid #DEDEDE
+  &-s2aisle1
+    grid-row: 1 / 21
+    grid-column: 1 / 2
+  &-s2aisle2
+    grid-row: 1 / 21
+    grid-column: 10 / 11
+  &-s2aisle12
+  &-heading
+    font-weight: 600
+    font-size: 90px
+    line-height: 100px
+    letter-spacing: -0.818182px
+  &-s2aisle28
+    grid-row: 4 / 6
+    grid-column: 3 / 6
+    overflow: hidden
+  &-imageboxLW
+    width: $rowW*3
+    height: $rowH*2
+    overflow: hidden
+  &-pictureLW
+    //max-width: 100%
+    //max-height: 100%
+  &-s2aisle35
+    grid-row: 5 / 9
+    grid-column: 7 / 9
+    overflow: hidden
+  &-theme
+    padding-top: 20px
+    padding-bottom: 5px
+    font-weight: normal
+    font-size: 13px
+    line-height: 23px
+    letter-spacing: 2px
+    text-transform: uppercase
+    opacity: 0.3
+  &-naming
+    font-weight: 600
+    font-size: 35px
+    line-height: 45px
+    letter-spacing: 0.3px
+    height: $rowH*0.73
+    position: absolute
+    &__large
+      width: $rowW*3
+    &__regular
+      width: $rowW*2
+      text-transform: capitalize
+  &-description
+    font-weight: normal
+    font-size: 17px
+    line-height: 32px
+    letter-spacing: 0.5px
+    opacity: 0.6
+    height: $rowH*0.73
+    position: absolute
+    &__large
+      width: $rowW*3
+      //padding-top: 15px
+    &__regular
+      width: $rowW*2
+  &-s2aisle80
+    grid-row: 12 / 14
+    grid-column: 3 / 5
+    overflow: hidden
+  &-s2aisle88
+    grid-row: 13 / 17
+    grid-column: 6 / 9
+    overflow: hidden
+.addinfo
+  padding-left: 20px
+  padding-bottom: 20px
+  width: 144px
+  height: 44px
+  display: flex
+  justify-content: space-between
+  position: relative
+  top: -44px
+  &-time
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: $bg-section2
+    color: #111111
+    width: 60px
+    height: 24px
+    border-radius: 5px
+    &__count
+      font-weight: 500
+      font-size: 11px
+      line-height: 18px
+      letter-spacing: 0.458333px
+  &-rating
+    display: flex
+    justify-content: space-around
+    align-items: center
+    background-color: #111111
+    color: $bg-section2
+    width: 56px
+    height: 24px
+    border-radius: 5px
+    &__count
+      font-weight: 600
+      font-size: 11px
+      line-height: 20px
+      letter-spacing: 0.458333px
+      max-width: 19px
+    &__star
+      width: 12px
+      height: 12px

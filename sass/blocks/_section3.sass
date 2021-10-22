@@ -1,0 +1,47 @@
+.container3
+  display: grid
+  grid-template-columns: auto $rowW $rowW $rowW $rowW $rowW $rowW $rowW $rowW auto
+  grid-template-rows: $rowH*0.81 $rowH*1.11 $rowH*0.58 $rowH*0.44 $rowH*0.13 $rowH*0.28 $rowH*0.44 $rowH*0.13 $rowH*0.28 $rowH*0.44 $rowH*0.13 $rowH*0.28 $rowH*0.44 $rowH*0.13 $rowH*0.83
+  grid-column-gap: 0px
+  grid-row-gap: 0px
+  justify-items: stretch
+  align-items: stretch
+  background-color: $bg-section3
+  color: $text-dark
+.s3aisle
+  border-left: 0.5px solid #DEDEDE
+  &-s3aisle1
+    grid-row: 1 / 16
+    grid-column: 1 / 2
+  &-s3aisle2
+    grid-row: 1 / 16
+    grid-column: 10 / 11
+  &-s3aisle12
+    color: $text-spec
+  &-number
+    font-weight: 600
+    font-size: 25px
+    line-height: 35px
+    color: #000000
+    opacity: 0.34
+  &-course
+    font-weight: normal
+    font-size: 50px
+    line-height: 70px
+    letter-spacing: 0.833333px
+    position: absolute
+  &-s3aisle33, &-s3aisle57, &-s3aisle81, &-s3aisle105
+    display: flex
+    justify-content: flex-end
+    align-items: center
+  &-arrow
+    width: 25px
+    height: 20px
+  &-coursesub
+    font-weight: normal
+    font-size: 14px
+    line-height: 23px
+    letter-spacing: 0.5px
+    opacity: 0.5
+  &-s3aisle44, &-s3aisle45, &-s3aisle46, &-s3aisle47, &-s3aisle48, &-s3aisle49, &-s3aisle68, &-s3aisle69, &-s3aisle70, &-s3aisle71, &-s3aisle72, &-s3aisle73, &-s3aisle92, &-s3aisle93, &-s3aisle94, &-s3aisle95, &-s3aisle96, &-s3aisle97
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.4)
