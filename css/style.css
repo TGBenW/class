@@ -4,7 +4,6 @@
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
-  line-height: 23px;
   overflow-x: hidden;
 }
 
@@ -56,20 +55,24 @@ button {
   height: 50px;
   background-color: #FFFFFF;
   border-radius: 50%;
-  display: table-cell;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
 }
 
 .s1aisle-letter {
   color: #1A1A1A;
   text-align: center;
   font-size: 20px;
+  line-height: 2rem;
 }
 
 .s1aisle-navbar {
-  height: 50px;
+  height: 100%;
   display: flex;
   align-items: center;
+  justify-content: start;
 }
 
 .s1aisle-menu {
@@ -84,18 +87,32 @@ button {
 }
 
 .s1aisle-uptheme {
-  height: 25px;
+  height: 100%;
+  width: 200%;
   padding-left: 20px;
-  display: flex;
-  align-items: center;
+  position: absolute;
 }
 
 .s1aisle-uptext {
   font-weight: 600;
   font-size: 13px;
+  line-height: 23px;
   letter-spacing: 1.5px;
   color: #FFFFFF;
   opacity: 0.5;
+  text-transform: uppercase;
+}
+
+.s1aisle-heading {
+  font-weight: 600;
+  font-size: 110px;
+  line-height: 110px;
+  letter-spacing: -1px;
+  position: absolute;
+  width: 110%;
+  height: 110%;
+  max-width: 800px;
+  max-height: 360px;
 }
 
 .s1aisle-s1aisle55 {
@@ -193,6 +210,7 @@ button {
 .s1aisle-imageboxW {
   width: 360px;
   height: 180px;
+  padding: 30px;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -248,18 +266,6 @@ button {
   overflow: hidden;
 }
 
-.heading {
-  font-weight: 600;
-  font-size: 110px;
-  line-height: 110px;
-  letter-spacing: -1px;
-  position: absolute;
-  width: 110%;
-  height: 110%;
-  max-width: 800px;
-  max-height: 360px;
-}
-
 .ornament {
   position: absolute;
 }
@@ -295,6 +301,11 @@ button {
   font-size: 90px;
   line-height: 100px;
   letter-spacing: -0.818182px;
+  position: absolute;
+  width: 110%;
+  height: 110%;
+  max-width: 800px;
+  max-height: 360px;
 }
 
 .s2aisle-s2aisle28 {
@@ -303,10 +314,26 @@ button {
   overflow: hidden;
 }
 
+.s2aisle-imageboxL {
+  width: 360px;
+  height: 360px;
+  overflow: hidden;
+}
+
+.s2aisle-pictureL {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .s2aisle-imageboxLW {
   width: 540px;
   height: 360px;
   overflow: hidden;
+}
+
+.s2aisle-pictureLW {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .s2aisle-s2aisle35 {
@@ -457,6 +484,24 @@ button {
   color: #1A1A1A;
 }
 
+.s3aisle-heading {
+  font-weight: 600;
+  font-size: 90px;
+  line-height: 100px;
+  letter-spacing: -0.818182px;
+}
+
+.s3aisle-s3aisle28, .s3aisle-s3aisle52, .s3aisle-s3aisle76, .s3aisle-s3aisle100 {
+  display: flex;
+  align-items: center;
+}
+
+.s3aisle-s3aisle33, .s3aisle-s3aisle57, .s3aisle-s3aisle81, .s3aisle-s3aisle105 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 .s3aisle-number {
   font-weight: 600;
   font-size: 25px;
@@ -473,17 +518,6 @@ button {
   position: absolute;
 }
 
-.s3aisle-s3aisle33, .s3aisle-s3aisle57, .s3aisle-s3aisle81, .s3aisle-s3aisle105 {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.s3aisle-arrow {
-  width: 25px;
-  height: 20px;
-}
-
 .s3aisle-coursesub {
   font-weight: normal;
   font-size: 14px;
@@ -492,6 +526,419 @@ button {
   opacity: 0.5;
 }
 
+.s3aisle-arrow {
+  width: 25px;
+  height: 20px;
+}
+
 .s3aisle-s3aisle44, .s3aisle-s3aisle45, .s3aisle-s3aisle46, .s3aisle-s3aisle47, .s3aisle-s3aisle48, .s3aisle-s3aisle49, .s3aisle-s3aisle68, .s3aisle-s3aisle69, .s3aisle-s3aisle70, .s3aisle-s3aisle71, .s3aisle-s3aisle72, .s3aisle-s3aisle73, .s3aisle-s3aisle92, .s3aisle-s3aisle93, .s3aisle-s3aisle94, .s3aisle-s3aisle95, .s3aisle-s3aisle96, .s3aisle-s3aisle97 {
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 1439px) {
+  .container1 {
+    grid-template-columns: auto 140px 140px 140px 140px 140px 140px 140px 140px auto;
+    grid-template-rows: 31.11111px 38.88889px 107.69231px 19.44444px 13px 201px 140px 25px 115px 140px 140px 140px;
+  }
+  .container2 {
+    grid-template-columns: auto 140px 140px 140px 140px 140px 140px 140px 140px auto;
+    grid-template-rows: 93.33333px 155.55556px 85.4px 140px 140px 37.8px 86.8px 15.4px 37.8px 85.4px 50.4px 140px 140px 37.8px 85.4px 18.2px 37.8px 85.4px 50.4px 93.33333px;
+  }
+  .container3 {
+    grid-template-columns: auto 140px 140px 140px 140px 140px 140px 140px 140px auto;
+    grid-template-rows: 113.4px 155.4px 81.2px 61.6px 18.2px 39.2px 61.6px 18.2px 39.2px 61.6px 18.2px 39.2px 61.6px 18.2px 116.2px;
+  }
+  .s1aisle-uptext {
+    line-height: 20px;
+  }
+  .s1aisle-s1aisle55 {
+    padding: 20px;
+  }
+  .s1aisle-join {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .s1aisle-imageboxL {
+    width: 280px;
+    height: 280px;
+  }
+  .s1aisle-imageboxS {
+    width: 140px;
+    height: 140px;
+  }
+  .s1aisle-imageboxW {
+    width: 280px;
+    height: 140px;
+  }
+  .s1aisle-play {
+    top: -28px;
+    width: 28px;
+    height: 28px;
+  }
+  .s1aisle-play__blue {
+    left: 252px;
+  }
+  .s1aisle-play__white {
+    left: 112px;
+  }
+  .s1aisle-textmain {
+    font-size: 16px;
+  }
+  .s1aisle-textsec {
+    font-size: 10px;
+    letter-spacing: 0.5px;
+  }
+  .s1aisle-heading {
+    font-size: 90px;
+    line-height: 90px;
+  }
+  .s2aisle-heading {
+    font-size: 80px;
+    line-height: 100px;
+  }
+  .s2aisle-imageboxL {
+    width: 280px;
+    height: 280px;
+  }
+  .s2aisle-imageboxLW {
+    width: 420px;
+    height: 280px;
+  }
+  .s2aisle-theme {
+    padding-top: 12px;
+    padding-bottom: 2px;
+    line-height: 23px;
+  }
+  .s2aisle-naming {
+    font-size: 28px;
+    line-height: 40px;
+    height: 102.2px;
+  }
+  .s2aisle-naming__large {
+    width: 420px;
+  }
+  .s2aisle-naming__regular {
+    width: 280px;
+  }
+  .s2aisle-description {
+    margin-top: 10px;
+    height: 102.2px;
+    font-size: 14px;
+    line-height: 26px;
+  }
+  .s2aisle-description__large {
+    width: 420px;
+  }
+  .s2aisle-description__regular {
+    width: 280px;
+  }
+  .s3aisle-heading {
+    font-size: 75px;
+    line-height: 90px;
+  }
+  .s3aisle-number {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .s3aisle-course {
+    font-size: 40px;
+    line-height: 56px;
+  }
+  .s3aisle-coursesub {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .container1 {
+    grid-template-columns: auto 120px 120px 120px 120px 120px 120px 120px 120px auto;
+    grid-template-rows: 26.66667px 33.33333px 92.30769px 16.66667px 13px 201px 120px 25px 95px 120px 120px 120px;
+  }
+  .container2 {
+    grid-template-columns: auto 120px 120px 120px 120px 120px 120px 120px 120px auto;
+    grid-template-rows: 80px 133.33333px 73.2px 120px 120px 32.4px 74.4px 13.2px 32.4px 73.2px 43.2px 120px 120px 32.4px 73.2px 15.6px 32.4px 73.2px 43.2px 80px;
+  }
+  .container3 {
+    grid-template-columns: auto 120px 120px 120px 120px 120px 120px 120px 120px auto;
+    grid-template-rows: 97.2px 133.2px 69.6px 52.8px 19.2px 33.6px 52.8px 19.2px 33.6px 52.8px 19.2px 33.6px 52.8px 19.2px 99.6px;
+  }
+  .s1aisle-s1aisle55 {
+    padding: 20px;
+  }
+  .s1aisle-join {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .s1aisle-uptext {
+    line-height: 16px;
+  }
+  .s1aisle-s1aisle66 {
+    min-width: 250px;
+    padding-top: 5px;
+  }
+  .s1aisle-textabout {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .s1aisle-imageboxL {
+    width: 240px;
+    height: 240px;
+  }
+  .s1aisle-imageboxS {
+    width: 120px;
+    height: 120px;
+  }
+  .s1aisle-imageboxW {
+    width: 240px;
+    height: 120px;
+  }
+  .s1aisle-play__blue {
+    left: 212px;
+  }
+  .s1aisle-play__white {
+    left: 92px;
+  }
+  .s1aisle-textmain {
+    font-size: 14px;
+  }
+  .s2aisle-heading {
+    font-size: 80px;
+    line-height: 100px;
+  }
+  .s2aisle-imageboxL {
+    width: 240px;
+    height: 240px;
+  }
+  .s2aisle-imageboxLW {
+    width: 360px;
+    height: 240px;
+  }
+  .s2aisle-theme {
+    padding-top: 8px;
+    padding-bottom: 2px;
+    line-height: 23px;
+  }
+  .s2aisle-naming {
+    font-size: 28px;
+    line-height: 40px;
+    height: 87.6px;
+  }
+  .s2aisle-naming__large {
+    width: 360px;
+  }
+  .s2aisle-naming__regular {
+    width: 240px;
+  }
+  .s2aisle-description {
+    margin-top: 10px;
+    height: 87.6px;
+    font-size: 11px;
+    line-height: 26px;
+  }
+  .s2aisle-description__large {
+    width: 360px;
+  }
+  .s2aisle-description__regular {
+    width: 240px;
+  }
+  .s3aisle-heading {
+    font-size: 75px;
+    line-height: 70px;
+  }
+  .s3aisle-number {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .s3aisle-course {
+    font-size: 40px;
+    line-height: 56px;
+  }
+  .s3aisle-coursesub {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container1 {
+    grid-template-columns: auto 95px 95px 95px 95px 95px 95px 95px 95px auto;
+    grid-template-rows: 21.11111px 26.38889px 73.07692px 13.19444px 13px 201px 95px 20px 70px 95px 95px 95px;
+  }
+  .container2 {
+    grid-template-columns: auto 95px 95px 95px 95px 95px 95px 95px 95px auto;
+    grid-template-rows: 63.33333px 105.55556px 57.95px 95px 95px 25.65px 58.9px 10.45px 25.65px 57.95px 34.2px 95px 95px 25.65px 57.95px 12.35px 25.65px 57.95px 34.2px 63.33333px;
+  }
+  .container3 {
+    grid-template-columns: auto 95px 95px 95px 95px 95px 95px 95px 95px auto;
+    grid-template-rows: 76.95px 105.45px 55.1px 41.8px 19px 26.6px 41.8px 19px 26.6px 41.8px 19px 26.6px 41.8px 19px 78.85px;
+  }
+  .s1aisle-circle {
+    width: 30px;
+    height: 30px;
+  }
+  .s1aisle-letter {
+    font-size: 15px;
+    line-height: 0.7rem;
+  }
+  .s1aisle-menu {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+  .s1aisle-uptext {
+    font-size: 10px;
+    line-height: 13px;
+  }
+  .s1aisle-heading {
+    font-size: 80px;
+    line-height: 90px;
+    max-width: 800px;
+    max-height: 360px;
+  }
+  .s1aisle-s1aisle55 {
+    padding: 10px;
+  }
+  .s1aisle-join {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .s1aisle-s1aisle60 {
+    padding-left: 10px;
+  }
+  .s1aisle-about {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .s1aisle-s1aisle66 {
+    min-width: 200px;
+    padding-left: 10px;
+  }
+  .s1aisle-textabout {
+    font-size: 10px;
+    line-height: 15px;
+  }
+  .s1aisle-imageboxL {
+    width: 190px;
+    height: 190px;
+  }
+  .s1aisle-imageboxS {
+    width: 95px;
+    height: 95px;
+  }
+  .s1aisle-imageboxW {
+    width: 190px;
+    height: 95px;
+  }
+  .s1aisle-play {
+    top: -14px;
+    width: 14px;
+    height: 14px;
+  }
+  .s1aisle-play__blue {
+    left: 176px;
+  }
+  .s1aisle-play__white {
+    left: 81px;
+  }
+  .s1aisle-playbtn {
+    width: 5px;
+    height: 6px;
+  }
+  .s1aisle-textmain {
+    margin-top: 5px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+  }
+  .s1aisle-textsec {
+    font-weight: 400;
+    font-size: 10px;
+  }
+  .s2aisle-heading {
+    font-size: 60px;
+    line-height: 65px;
+    max-width: 500px;
+  }
+  .s2aisle-imageboxL {
+    width: 190px;
+    height: 190px;
+  }
+  .s2aisle-imageboxLW {
+    width: 285px;
+    height: 190px;
+  }
+  .s2aisle-theme {
+    padding-top: 2px;
+    padding-bottom: 0;
+    font-size: 10px;
+    line-height: 23px;
+  }
+  .s2aisle-naming {
+    font-size: 21px;
+    line-height: 30px;
+    height: 69.35px;
+  }
+  .s2aisle-naming__large {
+    width: 285px;
+  }
+  .s2aisle-naming__regular {
+    width: 190px;
+  }
+  .s2aisle-description {
+    margin-top: 10px;
+    height: 69.35px;
+    font-size: 10px;
+    line-height: 20px;
+  }
+  .s2aisle-description__large {
+    width: 285px;
+  }
+  .s2aisle-description__regular {
+    width: 190px;
+  }
+  .addinfo {
+    padding-left: 5px;
+    padding-bottom: 5px;
+    width: 109px;
+    height: 23px;
+    top: -23px;
+  }
+  .addinfo-time {
+    width: 50px;
+    height: 18px;
+    border-radius: 5px;
+  }
+  .addinfo-time__count {
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 18px;
+  }
+  .addinfo-rating {
+    width: 46px;
+    height: 18px;
+    border-radius: 5px;
+  }
+  .addinfo-rating__count {
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 20px;
+    max-width: 19px;
+  }
+  .addinfo-rating__star {
+    width: 10px;
+    height: 10px;
+  }
+  .s3aisle-number {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .s3aisle-course {
+    font-size: 30px;
+    line-height: 42px;
+  }
+  .s3aisle-coursesub {
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
