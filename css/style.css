@@ -80,6 +80,11 @@ button {
   font-size: 13px;
   letter-spacing: 2px;
   opacity: 0.8;
+  height: 100%;
+}
+
+.s1aisle-burger {
+  display: none;
 }
 
 .s1aisle-s1aisle26 {
@@ -101,6 +106,7 @@ button {
   color: #FFFFFF;
   opacity: 0.5;
   text-transform: uppercase;
+  height: 100%;
 }
 
 .s1aisle-heading {
@@ -940,5 +946,135 @@ button {
   .s3aisle-coursesub {
     font-size: 12px;
     line-height: 14px;
+  }
+}
+
+@media (max-width: 766px) {
+  .container1 {
+    grid-template-columns: auto 0px 95px 95px 95px 95px 95px 95px 0px auto;
+  }
+  .container2 {
+    grid-template-columns: auto 0px 95px 95px 95px 95px 95px 95px 0px auto;
+  }
+  .container3 {
+    grid-template-columns: auto 0px 95px 95px 95px 95px 95px 95px 0px auto;
+  }
+  .s1aisle-s1aisle1, .s1aisle-s1aisle9, .s1aisle-s1aisle17, .s1aisle-s1aisle25, .s1aisle-s1aisle33, .s1aisle-s1aisle41, .s1aisle-s1aisle49, .s1aisle-s1aisle57, .s1aisle-s1aisle64, .s1aisle-s1aisle69, .s1aisle-s1aisle74, .s1aisle-s1aisle82, .s1aisle-s1aisle92 {
+    border: 0px;
+  }
+  .s2aisle-s2aisle3, .s2aisle-s2aisle11, .s2aisle-s2aisle19, .s2aisle-s2aisle27, .s2aisle-s2aisle33, .s2aisle-s2aisle37, .s2aisle-s2aisle43, .s2aisle-s2aisle49, .s2aisle-s2aisle55, .s2aisle-s2aisle63, .s2aisle-s2aisle71, .s2aisle-s2aisle79, .s2aisle-s2aisle86, .s2aisle-s2aisle90, .s2aisle-s2aisle95, .s2aisle-s2aisle100, .s2aisle-s2aisle105, .s2aisle-s2aisle113, .s2aisle-s2aisle121, .s2aisle-s2aisle129, .s2aisle-s2aisle2 {
+    border: none;
+  }
+  .s3aisle-s3aisle3, .s3aisle-s3aisle11, .s3aisle-s3aisle19, .s3aisle-s3aisle27, .s3aisle-s3aisle35, .s3aisle-s3aisle43, .s3aisle-s3aisle51, .s3aisle-s3aisle59, .s3aisle-s3aisle67, .s3aisle-s3aisle75, .s3aisle-s3aisle83, .s3aisle-s3aisle91, .s3aisle-s3aisle99, .s3aisle-s3aisle107, .s3aisle-s3aisle115, .s3aisle-s3aisle2 {
+    border: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .container1 {
+    grid-template-columns: auto 5px 75px 75px 75px 75px 5px 5px 5px auto;
+    grid-template-rows: 16.66667px 20.83333px 25px 10.41667px 10.41667px 112.5px 75px 75px 75px 20px 55px 75px 75px 75px;
+  }
+  .container2 {
+    grid-template-columns: auto 0px 75px 75px 75px 75px 10px 0px 0px auto;
+    grid-template-rows: 50px 83.33333px 45.75px 75px 75px 20.25px 46.5px 8.25px 20.25px 45.75px 27px 75px 75px 20.25px 45.75px 9.75px 20.25px 45.75px 27px 50px;
+  }
+  .container3 {
+    grid-template-columns: auto 0px 75px 75px 75px 75px 0px 0px 0px auto;
+    grid-template-rows: 60.75px 83.25px 43.5px 33px 15px 21px 33px 15px 21px 33px 15px 21px 33px 15px 62.25px;
+  }
+  .s1aisle-s1aisle7, .s1aisle-s1aisle8, .s1aisle-s1aisle15, .s1aisle-s1aisle16, .s1aisle-s1aisle23, .s1aisle-s1aisle24, .s1aisle-s1aisle31, .s1aisle-s1aisle32, .s1aisle-s1aisle39, .s1aisle-s1aisle40, .s1aisle-s1aisle47, .s1aisle-s1aisle48, .s1aisle-s1aisle53, .s1aisle-s1aisle54, .s1aisle-s1aisle56, .s1aisle-s1aisle62, .s1aisle-s1aisle63, .s1aisle-s1aisle68, .s1aisle-s1aisle69, .s1aisle-s1aisle80, .s1aisle-s1aisle81, .s1aisle-s1aisle88, .s1aisle-s1aisle89, .s1aisle-s1aisle65, .s1aisle-s1aisle70, .s1aisle-s1aisle90, .s1aisle-s1aisle99, .s1aisle-s1aisle96, .s1aisle-s1aisle97, .s1aisle-s1aisle102, .s1aisle-s1aisle103, .s1aisle-s1aisle104, .s1aisle-s1aisle106 {
+    border: none;
+  }
+  .s1aisle-s1aisle57, .s1aisle-s1aisle74, .s1aisle-s1aisle63 {
+    border-left: 0.5px solid rgba(255, 255, 255, 0.08);
+  }
+  .s1aisle-s1aisle55 {
+    grid-row: 7 / 8;
+    grid-column: 6 / 7;
+  }
+  .s1aisle-navbar {
+    display: none;
+  }
+  .s1aisle-burger {
+    display: block;
+  }
+  .s1aisle-heading {
+    font-size: 40px;
+    line-height: 45px;
+    max-width: 90%;
+    max-height: 180px;
+  }
+  .s1aisle-join {
+    font-size: 10px;
+    line-height: 14px;
+  }
+  .s1aisle-s1aisle77 {
+    grid-row: 8 / 9;
+    grid-column: 3 / 4;
+  }
+  .s1aisle-s1aisle85 {
+    grid-row: 9 / 10;
+    grid-column: 3 / 4;
+  }
+  .s1aisle-s1aisle58 {
+    grid-row: 12 / 14;
+    grid-column: 4 / 6;
+  }
+  .s1aisle-s1aisle75 {
+    grid-row: 13 / 14;
+    grid-column: 6 / 7;
+  }
+  .s1aisle-s1aisle60 {
+    grid-row: 10 / 11;
+    grid-column: 3 / 4;
+  }
+  .s1aisle-s1aisle66 {
+    grid-row: 11 / 12;
+    grid-column: 3 / 4;
+  }
+  .s1aisle-s1aisle63 {
+    grid-row: 7 / 8;
+    grid-column: 4 / 5;
+  }
+  .s1aisle-s1aisle71 {
+    grid-row: 8 / 9;
+    grid-column: 5 / 6;
+  }
+  .s1aisle-s1aisle72 {
+    grid-row: 9 / 10;
+    grid-column: 4 / 6;
+  }
+  .s1aisle-s1aisle79 {
+    grid-row: 9 / 10;
+    grid-column: 6 / 7;
+  }
+  .s1aisle-s1aisle76, .s1aisle-s1aisle86 {
+    background-color: #979797;
+    opacity: 0.12;
+  }
+  .s1aisle-imageboxL {
+    width: 150px;
+    height: 150px;
+  }
+  .s1aisle-imageboxS {
+    width: 75px;
+    height: 75px;
+  }
+  .s1aisle-imageboxW {
+    width: 150px;
+    height: 75px;
+  }
+  .s1aisle-play__blue {
+    left: 137px;
+  }
+  .s1aisle-play__white {
+    left: 62px;
+  }
+  .s2aisle-s2aisle9, .s2aisle-s2aisle10, .s2aisle-s2aisle17, .s2aisle-s2aisle18, .s2aisle-s2aisle25, .s2aisle-s2aisle26, .s2aisle-s2aisle31, .s2aisle-s2aisle32, .s2aisle-s2aisle36, .s2aisle-s2aisle42, .s2aisle-s2aisle48, .s2aisle-s2aisle54, .s2aisle-s2aisle61, .s2aisle-s2aisle62, .s2aisle-s2aisle69, .s2aisle-s2aisle70, .s2aisle-s2aisle77, .s2aisle-s2aisle78, .s2aisle-s2aisle84, .s2aisle-s2aisle85, .s2aisle-s2aisle89, .s2aisle-s2aisle94, .s2aisle-s2aisle99, .s2aisle-s2aisle104, .s2aisle-s2aisle111, .s2aisle-s2aisle112, .s2aisle-s2aisle119, .s2aisle-s2aisle120, .s2aisle-s2aisle127, .s2aisle-s2aisle128, .s2aisle-s2aisle135, .s2aisle-s2aisle136 {
+    border: none;
+  }
+  .s3aisle-s3aisle9, .s3aisle-s3aisle10, .s3aisle-s3aisle17, .s3aisle-s3aisle18, .s3aisle-s3aisle25, .s3aisle-s3aisle26, .s3aisle-s3aisle33, .s3aisle-s3aisle34, .s3aisle-s3aisle41, .s3aisle-s3aisle42, .s3aisle-s3aisle49, .s3aisle-s3aisle50, .s3aisle-s3aisle57, .s3aisle-s3aisle58, .s3aisle-s3aisle65, .s3aisle-s3aisle66, .s3aisle-s3aisle73, .s3aisle-s3aisle74, .s3aisle-s3aisle81, .s3aisle-s3aisle82, .s3aisle-s3aisle89, .s3aisle-s3aisle90, .s3aisle-s3aisle97, .s3aisle-s3aisle98, .s3aisle-s3aisle105, .s3aisle-s3aisle106, .s3aisle-s3aisle113, .s3aisle-s3aisle114, .s3aisle-s3aisle121, .s3aisle-s3aisle122 {
+    border: none;
   }
 }

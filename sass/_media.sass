@@ -313,10 +313,105 @@
       font-size: 12px
       line-height: 14px
 
-//@media (max-width: 767px)
-
-//@media (max-width: 576px)
-
+@media (max-width: 766px)
+  .container1
+    grid-template-columns: auto 0px $rowWm3 $rowWm3 $rowWm3 $rowWm3 $rowWm3 $rowWm3 0px auto
+  .container2
+    grid-template-columns: auto 0px $rowWm3 $rowWm3 $rowWm3 $rowWm3 $rowWm3 $rowWm3 0px auto
+  .container3
+    grid-template-columns: auto 0px $rowWm3 $rowWm3 $rowWm3 $rowWm3 $rowWm3 $rowWm3 0px auto
+  .s1aisle
+    &-s1aisle1, &-s1aisle9, &-s1aisle17, &-s1aisle25, &-s1aisle33, &-s1aisle41, &-s1aisle49, &-s1aisle57, &-s1aisle64, &-s1aisle69, &-s1aisle74, &-s1aisle82, &-s1aisle92
+      border: 0px
+  .s2aisle
+    &-s2aisle3, &-s2aisle11, &-s2aisle19, &-s2aisle27, &-s2aisle33, &-s2aisle37, &-s2aisle43, &-s2aisle49, &-s2aisle55, &-s2aisle63, &-s2aisle71, &-s2aisle79, &-s2aisle86, &-s2aisle90, &-s2aisle95, &-s2aisle100, &-s2aisle105, &-s2aisle113, &-s2aisle121, &-s2aisle129, &-s2aisle2
+      border: none
+  .s3aisle
+    &-s3aisle3, &-s3aisle11, &-s3aisle19, &-s3aisle27, &-s3aisle35, &-s3aisle43, &-s3aisle51, &-s3aisle59, &-s3aisle67, &-s3aisle75, &-s3aisle83, &-s3aisle91, &-s3aisle99, &-s3aisle107, &-s3aisle115, &-s3aisle2
+      border: none
+@media (max-width: 575px)
+  .container1
+    grid-template-columns: auto 5px $rowWm4 $rowWm4 $rowWm4 $rowWm4 5px 5px 5px auto
+    grid-template-rows: $rowHm4/4.5 $rowHm4/3.6 $rowHm4/3 $rowHm4/7.2 $rowHm4/7.2 $rowHm4*1.5 $rowHm4 $rowHm4 $rowHm4 20px $rowHm4 - 20px $rowHm4 $rowHm4 $rowHm4
+  .container2
+    grid-template-columns: auto 0px $rowWm4 $rowWm4 $rowWm4 $rowWm4 10px 0px 0px auto
+    grid-template-rows: $rowHm4/3*2 $rowHm4/9*10 $rowHm4*0.61 $rowHm4 $rowHm4 $rowHm4*0.27 $rowHm4*0.62 $rowHm4*0.11 $rowHm4*0.27 $rowHm4*0.61 $rowHm4*0.36 $rowHm4 $rowHm4 $rowHm4*0.27 $rowHm4*0.61 $rowHm4*0.13 $rowHm4*0.27 $rowHm4*0.61 $rowHm4*0.36 $rowHm4/3*2
+  .container3
+    grid-template-columns: auto 0px $rowWm4 $rowWm4 $rowWm4 $rowWm4 0px 0px 0px auto
+    grid-template-rows: $rowHm4*0.81 $rowHm4*1.11 $rowHm4*0.58 $rowHm4*0.44 $rowHm4*0.2 $rowHm4*0.28 $rowHm4*0.44 $rowHm4*0.2 $rowHm4*0.28 $rowHm4*0.44 $rowHm4*0.2 $rowHm4*0.28 $rowHm4*0.44 $rowHm4*0.2 $rowHm4*0.83
+  .s1aisle
+    &-s1aisle7, &-s1aisle8, &-s1aisle15, &-s1aisle16, &-s1aisle23, &-s1aisle24, &-s1aisle31, &-s1aisle32, &-s1aisle39, &-s1aisle40, &-s1aisle47, &-s1aisle48, &-s1aisle53, &-s1aisle54, &-s1aisle56, &-s1aisle62, &-s1aisle63, &-s1aisle68, &-s1aisle69, &-s1aisle80, &-s1aisle81, &-s1aisle88, &-s1aisle89, &-s1aisle65, &-s1aisle70, &-s1aisle90, &-s1aisle99, &-s1aisle96, &-s1aisle97, &-s1aisle102, &-s1aisle103, &-s1aisle104, &-s1aisle106
+      border: none
+    &-s1aisle57, &-s1aisle74, &-s1aisle63
+      border-left: 0.5px solid rgba(255, 255, 255, 0.08)
+    &-s1aisle55
+      grid-row: 7 / 8
+      grid-column: 6 / 7
+    &-navbar
+      display: none
+    &-burger
+      display: block
+    &-heading
+      font-size: 40px
+      line-height: 45px
+      max-width: 90%
+      max-height: 180px
+    &-join
+      font-size: 10px
+      line-height: 14px
+    &-s1aisle77
+      grid-row: 8 / 9
+      grid-column: 3 / 4
+    &-s1aisle85
+      grid-row: 9 / 10
+      grid-column: 3 / 4
+    &-s1aisle58
+      grid-row: 12 / 14
+      grid-column: 4 / 6
+    &-s1aisle75
+      grid-row: 13 / 14
+      grid-column: 6 / 7
+    &-s1aisle60
+      grid-row: 10 / 11
+      grid-column: 3 / 4
+    &-s1aisle66
+      grid-row: 11 / 12
+      grid-column: 3 / 4
+    &-s1aisle63
+      grid-row: 7 / 8
+      grid-column: 4 / 5
+    &-s1aisle71
+      grid-row: 8 / 9
+      grid-column: 5 / 6
+    &-s1aisle72
+      grid-row: 9 / 10
+      grid-column: 4 / 6
+    &-s1aisle79
+      grid-row: 9 / 10
+      grid-column: 6 / 7
+    &-s1aisle76, &-s1aisle86
+      background-color: #979797
+      opacity: 0.12
+    &-imageboxL
+      width: $rowWm4*2
+      height: $rowHm4*2
+    &-imageboxS
+      width: $rowWm4
+      height: $rowHm4
+    &-imageboxW
+      width: $rowWm4*2
+      height: $rowHm4
+    &-play
+      &__blue
+        left: $rowWm4*2-$iconsize + 35px
+      &__white
+        left: $rowWm4 - $iconsize + 35px
+  .s2aisle
+    &-s2aisle9, &-s2aisle10, &-s2aisle17, &-s2aisle18, &-s2aisle25, &-s2aisle26, &-s2aisle31, &-s2aisle32, &-s2aisle36, &-s2aisle42, &-s2aisle48, &-s2aisle54, &-s2aisle61, &-s2aisle62, &-s2aisle69, &-s2aisle70, &-s2aisle77, &-s2aisle78, &-s2aisle84, &-s2aisle85, &-s2aisle89, &-s2aisle94, &-s2aisle99, &-s2aisle104, &-s2aisle111, &-s2aisle112, &-s2aisle119, &-s2aisle120, &-s2aisle127, &-s2aisle128, &-s2aisle135, &-s2aisle136
+      border: none
+  .s3aisle
+    &-s3aisle9, &-s3aisle10, &-s3aisle17, &-s3aisle18, &-s3aisle25, &-s3aisle26, &-s3aisle33, &-s3aisle34, &-s3aisle41, &-s3aisle42, &-s3aisle49, &-s3aisle50, &-s3aisle57, &-s3aisle58, &-s3aisle65, &-s3aisle66, &-s3aisle73, &-s3aisle74, &-s3aisle81, &-s3aisle82, &-s3aisle89, &-s3aisle90, &-s3aisle97, &-s3aisle98, &-s3aisle105, &-s3aisle106, &-s3aisle113, &-s3aisle114, &-s3aisle121, &-s3aisle122
+      border: none
 //@media (max-width: 500px)
 
 //@media (max-width: 470px)
