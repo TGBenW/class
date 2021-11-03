@@ -331,11 +331,11 @@
       border: none
 @media (max-width: 575px)
   .container1
-    grid-template-columns: auto 5px $rowWm4 $rowWm4 $rowWm4 $rowWm4 5px 5px 5px auto
-    grid-template-rows: $rowHm4/4.5 $rowHm4/3.6 $rowHm4/3 $rowHm4/7.2 $rowHm4/7.2 $rowHm4*1.5 $rowHm4 $rowHm4 $rowHm4 20px $rowHm4 - 20px $rowHm4 $rowHm4 $rowHm4
+    grid-template-columns: auto 0px $rowWm4 $rowWm4 $rowWm4 $rowWm4 0px 0px 0px auto
+    grid-template-rows: $rowHm4/4.5 $rowHm4/3.6 $rowHm4/3 $rowHm4/7.2 $rowHm4/7.2 $rowHm4*1.25 $rowHm4 $rowHm4 $rowHm4 20px $rowHm4 - 20px $rowHm4 $rowHm4 $rowHm4*0.75
   .container2
-    grid-template-columns: auto 0px $rowWm4 $rowWm4 $rowWm4 $rowWm4 10px 0px 0px auto
-    grid-template-rows: $rowHm4/3*2 $rowHm4/9*10 $rowHm4*0.61 $rowHm4 $rowHm4 $rowHm4*0.27 $rowHm4*0.62 $rowHm4*0.11 $rowHm4*0.27 $rowHm4*0.61 $rowHm4*0.36 $rowHm4 $rowHm4 $rowHm4*0.27 $rowHm4*0.61 $rowHm4*0.13 $rowHm4*0.27 $rowHm4*0.61 $rowHm4*0.36 $rowHm4/3*2
+    grid-template-columns: auto 0px $rowWm4 $rowWm4 $rowWm4 $rowWm4 0px 0px 0px auto
+    grid-template-rows: $rowHm4*0.75 $rowHm4*0.9 $rowHm4*0.61 $rowHm4 $rowHm4 $rowHm4 $rowHm4*0.35 $rowHm4*0.3 $rowHm4*0.9 $rowHm4 $rowHm4 $rowHm4 $rowHm4*0.35 $rowHm4*0.3 $rowHm4*0.9 $rowHm4 $rowHm4 $rowHm4 $rowHm4*0.35 $rowHm4*0.3 $rowHm4*0.9 $rowHm4 $rowHm4 $rowHm4 $rowHm4*0.35 $rowHm4*0.3 $rowHm4*0.9 $rowHm4*0.75
   .container3
     grid-template-columns: auto 0px $rowWm4 $rowWm4 $rowWm4 $rowWm4 0px 0px 0px auto
     grid-template-rows: $rowHm4*0.81 $rowHm4*1.11 $rowHm4*0.58 $rowHm4*0.44 $rowHm4*0.2 $rowHm4*0.28 $rowHm4*0.44 $rowHm4*0.2 $rowHm4*0.28 $rowHm4*0.44 $rowHm4*0.2 $rowHm4*0.28 $rowHm4*0.44 $rowHm4*0.2 $rowHm4*0.83
@@ -406,9 +406,108 @@
         left: $rowWm4*2-$iconsize + 35px
       &__white
         left: $rowWm4 - $iconsize + 35px
+    &-about
+      font-size: 10px
+      line-height: 20px
+    &-textabout
+      font-size: 10px
+      line-height: 14px
+    &-s1aisle75,&-s1aisle79
+      padding-left: 5px
+      display: flex
+      flex-direction: column
+      justify-content: end
+    &-s1aisle79
+      padding-bottom: 10px
+    &-textmain
+      font-size: 10px
+      line-height: 15px
+    &-textsec
+      margin-top: 5px
+      font-size: 8px
   .s2aisle
-    &-s2aisle9, &-s2aisle10, &-s2aisle17, &-s2aisle18, &-s2aisle25, &-s2aisle26, &-s2aisle31, &-s2aisle32, &-s2aisle36, &-s2aisle42, &-s2aisle48, &-s2aisle54, &-s2aisle61, &-s2aisle62, &-s2aisle69, &-s2aisle70, &-s2aisle77, &-s2aisle78, &-s2aisle84, &-s2aisle85, &-s2aisle89, &-s2aisle94, &-s2aisle99, &-s2aisle104, &-s2aisle111, &-s2aisle112, &-s2aisle119, &-s2aisle120, &-s2aisle127, &-s2aisle128, &-s2aisle135, &-s2aisle136
+    &-s2aisle3, &-s2aisle11, &-s2aisle19, &-s2aisle27, &-s2aisle33, &-s2aisle37, &-s2aisle43, &-s2aisle49, &-s2aisle55, &-s2aisle63, &-s2aisle71, &-s2aisle79, &-s2aisle86, &-s2aisle90, &-s2aisle95, &-s2aisle100, &-s2aisle105, &-s2aisle113, &-s2aisle121, &-s2aisle129
+      border-left: 0.5px solid #DEDEDE
+    &-s2aisle3, &-s2aisle11, &-s2aisle19, &-s2aisle27, &-s2aisle32, &-s2aisle, &-s2aisle37, &-s2aisle42, &-s2aisle51, &-s2aisle58, &-s2aisle66, &-s2aisle72, &-s2aisle78, &-s2aisle84, &-s2aisle93, &-s2aisle102, &-s2aisle110, &-s2aisle115, &-s2aisle121, &-s2aisle127, &-s2aisle134, &-s2aisle136, &-s2aisle142, &-s2aisle151, &-s2aisle157, &-s2aisle163, &-s2aisle169, &-s2aisle178, &-s2aisle187, &-s2aisle196, &-s2aisle9, &-s2aisle10, &-s2aisle17, &-s2aisle18, &-s2aisle25, &-s2aisle26, &-s2aisle30, &-s2aisle31, &-s2aisle34, &-s2aisle35, &-s2aisle40, &-s2aisle41, &-s2aisle48, &-s2aisle49, &-s2aisle56, &-s2aisle57, &-s2aisle64, &-s2aisle65, &-s2aisle70, &-s2aisle71, &-s2aisle75, &-s2aisle77, &-s2aisle82, &-s2aisle83, &-s2aisle90, &-s2aisle92, &-s2aisle99, &-s2aisle100, &-s2aisle107, &-s2aisle108, &-s2aisle113, &-s2aisle114, &-s2aisle119, &-s2aisle120, &-s2aisle124, &-s2aisle126, &-s2aisle132, &-s2aisle133, &-s2aisle139, &-s2aisle140, &-s2aisle147, &-s2aisle148, &-s2aisle149, &-s2aisle153, &-s2aisle154, &-s2aisle155, &-s2aisle159, &-s2aisle160, &-s2aisle161, &-s2aisle165, &-s2aisle166, &-s2aisle167, &-s2aisle174, &-s2aisle175, &-s2aisle176, &-s2aisle183, &-s2aisle184, &-s2aisle185, &-s2aisle192, &-s2aisle193, &-s2aisle194
       border: none
+    &-heading
+      font-size: 35px
+      line-height: 45px
+      max-width: 350px
+    &-imageboxL
+      width: $rowWm4*3
+      height: $rowHm4*3
+    &-imageboxLW
+      width: $rowWm4*4
+      height: $rowHm4*3
+    &-pictureLW
+    &-theme
+      position: absolute
+    &-naming
+      font-size: 12px
+      line-height: 20px
+      height: $rowHm4*0.73
+      &__large
+        width: $rowWm4*4
+      &__regular
+        width: $rowWm4*3
+    &-description
+      margin-top: 10px
+      height: $rowHm4*0.5
+      font-size: 10px
+      line-height: 12px
+      &__large
+        width: $rowWm4*4
+      &__regular
+        width: $rowWm4*3
+    &-s2aisle28
+      grid-row: 4 / 7
+      grid-column: 3 / 7
+    &-s2aisle38
+      grid-row: 7 / 8
+      grid-column: 3 / 4
+    &-s2aisle44
+      grid-row: 8 / 9
+      grid-column: 3 / 4
+    &-s2aisle50
+      grid-row: 9 / 10
+      grid-column: 3 / 4
+    &-s2aisle35
+      grid-row: 10 / 13
+      grid-column: 4 / 7
+    &-s2aisle60
+      grid-row: 13 / 14
+      grid-column: 4 / 5
+    &-s2aisle68
+      grid-row: 14 / 15
+      grid-column: 4 / 5
+    &-s2aisle76
+      grid-row: 15 / 16
+      grid-column: 4 / 5
+    &-s2aisle80
+      grid-row: 16 / 19
+      grid-column: 3 / 6
+    &-s2aisle91
+      grid-row: 19 / 20
+      grid-column: 3 / 4
+    &-s2aisle96
+      grid-row: 20 / 21
+      grid-column: 3 / 4
+    &-s2aisle101
+      grid-row: 21 / 22
+      grid-column: 3 / 4
+    &-s2aisle88
+      grid-row: 22 / 25
+      grid-column: 3 / 7
+    &-s2aisle109
+      grid-row: 25 / 26
+      grid-column: 3 / 4
+    &-s2aisle117
+      grid-row: 26 / 27
+      grid-column: 3 / 4
+    &-s2aisle125
+      grid-row: 27 / 28
+      grid-column: 3 / 4
   .s3aisle
     &-s3aisle9, &-s3aisle10, &-s3aisle17, &-s3aisle18, &-s3aisle25, &-s3aisle26, &-s3aisle33, &-s3aisle34, &-s3aisle41, &-s3aisle42, &-s3aisle49, &-s3aisle50, &-s3aisle57, &-s3aisle58, &-s3aisle65, &-s3aisle66, &-s3aisle73, &-s3aisle74, &-s3aisle81, &-s3aisle82, &-s3aisle89, &-s3aisle90, &-s3aisle97, &-s3aisle98, &-s3aisle105, &-s3aisle106, &-s3aisle113, &-s3aisle114, &-s3aisle121, &-s3aisle122
       border: none
