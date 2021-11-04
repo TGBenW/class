@@ -997,7 +997,9 @@ button {
     display: none;
   }
   .s1aisle-burger {
-    display: block;
+    display: flex;
+    justify-content: end;
+    font-size: 0.8em;
   }
   .s1aisle-heading {
     font-size: 40px;
